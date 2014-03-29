@@ -1,0 +1,251 @@
+/*
+TO-DO: Make the tooltip and select image show up at same time. 
+On hover of anchor.
+TO-DO: Get rid of tooltip for non-desktop
+TO-DO: get slideDown and slideUp to work
+TO-DO: refactor navScroller();
+*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+}
+p, div {
+	font-family: 'Open Sans', sans-serif;
+}
+
+#home-page {
+	background: url("../img/sf.jpg") 50% 0 fixed;
+	background-size: 100%;
+}
+
+/****Nav-Bar****/
+
+.navbar-img {
+	height: 25px;
+	width: 25px;
+}
+
+.navbar {
+	background: none;
+	margin-bottom: 0;
+}
+
+.chart {
+	content: url("../img/794-chart@2x.png");
+}
+
+.wrench {
+	content: url("../img/742-wrench@2x.png");
+}
+
+.person {
+	content: url("../img/870-smile@2x.png");
+}
+
+.chart:hover {
+	content: url("../img/794-chart-selected@2x.png");
+}
+
+.wrench:hover {
+	content: url("../img/742-wrench-selected@2x.png");
+}
+
+.person:hover {
+	content: url("../img/870-smile-selected@2x.png");
+}
+
+/****Welcome Section****/
+
+#welcome-section {
+/*	background: url("../img/blue-paper-texture.jpg") 50% 0 fixed;*/
+	height: 700px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
+  padding: 0 0 200px 0;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+
+#welcome-section h1 {
+	font-size: 12vw;
+	color: #2d2d2d;
+	font-weight: 900;
+	margin-bottom: 0;
+}
+
+#welcome-section span {
+	font-size: 3.5em;
+	color: #FFFFFF;
+/*	text-shadow: 1px 2px 3px #000000;*/
+	margin-top: 0;
+	position: relative;
+}
+
+#instructions {
+	font-size: 3.5em;
+	color: #2d2d2d;
+	text-shadow: 0 0 0;
+	margin-top: 30px;
+}
+
+#sidebar-nav {
+		margin-right: 25px;
+    position: absolute;
+    top: 43%;
+    right: 0px;
+}
+
+#sidebar-nav li {
+	list-style-type: none;
+}
+
+#sidebar-nav li img {
+	height: 10px;
+	width: 10px;
+	position: fixed;
+}
+
+#home-page .container {
+	padding-top: 100px;
+}
+
+/****Projects Section****/
+
+#projects-section {
+	background: url("../img/brickwall_@2x.png") 50% 0 fixed;
+	z-index: 4;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
+	height: 680px;
+}
+
+#projects-header {
+	text-align: center;
+	padding-top: 35px;
+}
+
+#projects-header h1 {
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+#carousel-projects {
+	padding-top: 30px;
+}
+
+.carousel-description, .carousel-img {
+	width: 50%;
+}
+
+.carousel-description {
+	float: right;
+	text-align: center;
+}
+
+.carousel-img {
+	float: left;
+	text-align: center;
+}
+
+.carousel-img img {
+	height: 80%;
+	width: 80%;
+}
+
+#rails-logo {
+	height: 38%;
+	width: 38%;
+}
+
+#node-logo {
+	margin-top: 60px;
+	width: 75%;
+	height: 75%;
+}
+
+#js-logo {
+	height: 39%;
+	width: 39%;
+	margin-top: 20px;
+}
+
+.carousel-control.left, .carousel-control.right {
+	background-image: none;
+}
+
+.carousel-control:hover {
+ 
+}
+
+.glyphicon-chevron-right, .glyphicon-chevron-left {
+	color: black;
+}
+
+/****Skills Section****/
+
+#skills-section {
+	z-index: 3;
+	background: white 50% 0 fixed;
+}
+
+#skills-section .container {
+	text-align: center;
+	padding-top: 60px;
+	height: auto;
+	padding-bottom: 80px;
+}
+
+#skills-section .container h1 {
+	font-weight: bold;
+}
+
+#skills-section .row {
+	margin-top: 50px;
+}
+
+.div-line {
+	display: block;
+	height: 4px;
+	max-width: 150px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	margin: 30px auto 0;
+	background-color: rgba(0, 0, 0, 0.08);
+}
+
+/****About Section****/
+
+#about-section {
+	background: url("../img/logan-background.jpg") 50% 0 fixed;
+	height: 680px;
+	box-shadow: 0 3px 8px 0 #000000;
+	-webkit-box-shadow: 0 3px 8px 0 #000000;
+	text-align: center;
+}
+
+#about-section .container {
+	padding-top: 25px;
+}
+
+#about-section p {
+	font-size: 1.25em;
+}
+
+#about-section ul {
+	list-style-type: none;
+	padding: 0 15px 0 15px;
+	color: white;
+	vertical-align: middle;
+	line-height: 50px;
+}
+
+#about-section ul li {
+	border: 1px solid #444444;
+	background: #444444;
+	height: 50px;
+	box-shadow: 0 0 2px 0 black;
+
+}
