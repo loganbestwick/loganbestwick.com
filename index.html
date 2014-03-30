@@ -3,7 +3,7 @@
 <head>
 	<title>Logan Bestwick</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="public/css/styles.css">
 </head>
@@ -33,57 +33,44 @@
 	<section id="projects-section" data-speed="6" data-type="background">
 		<a name="projects-anchor"></a>
 		<div id="projects-header">
-			<img src="public/img/794-chart-selected-gray@2x.png">
+			<img src="public/img/794-chart@2x.png">
 			<h1>Portfolio</h1>
 		</div>
+		<div class="div-line-portfolio"></div>
 		<div id="carousel-projects" class="carousel slide" data-ride="caruosel">
 			<div class="carousel-inner">
 				<div class="item active clearfix">
 					<div class="row">
-						<div class="col-md-1"></div>
-						<div class="col-md-5 carousel-img">
-							<a href="http://campcollab.herokuapp.com" target="_blank"><img src="public/img/campcollab.png" alt="first-slide"></a>
+						<div class="col-md-2"></div>
+						<div class="col-md-8">
+							<p>Built with Rails, a web app for creating virtual campsites to help coordinate camping trips.</p>
 						</div>
-						<div class="col-md-5 carousel-description">
-							<h1>Camp Collab</h1>
-							<p>An online web app which allows you to create virtual campsites to help you and your friends coordinate upcoming camping trips.</p>
-							<img id="rails-logo" src="public/img/rails-logo.png">
-						</div>
-						<div class="col-md-1"></div>
+						<div class="col-md-2"></div>
+						<a href="http://campcollab.herokuapp.com" target="_blank"><img src="public/img/campcollab.png" alt="first-slide"></a>
 					</div>
 				</div>
 
 				<div class="clearfix item">
 					<div class="row">
-						<div class="col-md-1"></div>
-						<div class="col-md-5 carousel-img">
-							<a href="https://github.com/loganbestwick/geo-tools" target="_blank">
-							<img src="public/img/geo-tools.png" alt="second-slide"></a>
+						<div class="col-md-2"></div>
+						<div class="col-md-8">
+							<p>Built for Node.js, an open-source library used to calculate coordinates and distances.</p>
 						</div>
-						<div class="col-md-5 carousel-description">
-							<h1>geo-tools</h1>
-							<p>A simple, easy to use, open-source npm library used to geocode an address, reverse geocode coordinates, and calculate the distance between two locations.</p>
-							<img id="node-logo" src="public/img/node-logo.png">	
-						</div>
-						<div class="col-md-1"></div>
+						<div class="col-md-2"></div>
+						<a href="https://github.com/loganbestwick/geo-tools" target="_blank"><img src="public/img/geo-tools.png" alt="second-slide"></a>
 					</div>
 				</div>
 
 				<div class="clearfix item">
 					<div class="row">
-						<div class="col-md-1"></div>
-						<div class="col-md-5 carousel-img">
-							<a href="http://sljracer.herokuapp.com" target="_blank">
-							<img src="public/img/slj-racer.png" alt="second-slide"></a>
+						<div class="col-md-2"></div>
+						<div class="col-md-8">
+							<p>Mr. Samuel L. Jackson encourages you in a type racing journey. Built primarily in Javascript.</p>
 						</div>
-						<div class="col-md-5 carousel-img">
-							<h1>SLJ Typeracer</h1>
-							<p>The baddest type racer out there. Mr. Samuel L. Jackson 'encourages' you during your type racing journey. WPM and accuracy are kept track of. This project is mostly all done in Javascript and incorporates Firebase to keep a leaderboard.</p>
-							<img id="js-logo" src="public/img/jslogo.png">
-						</div>
-						<div class="col-md-1"></div>
+						<div class="col-md-2"></div>
+						<a href="http://sljracer.herokuapp.com" target="_blank"><img src="public/img/slj-racer.png" alt="second-slide"></a>
 					</div>
-				</div>			
+				</div>		
 			</div>
 
 			<a class="left carousel-control" href="#carousel-projects" data-slide="prev">
@@ -93,18 +80,11 @@
   		<span class="glyphicon glyphicon-chevron-right"></span>
 			</a>
 
-			<ol class="carousel-indicators">
-				<li data-target="carousel-campcollab" data-slide-to="0" class="active"></li>
-				<li data-target="carousel-geotools" data-slide-to="1"></li>
-				<li data-target="carousel-slj" data-slide-to="2"></li>
-			</ol>
-
 		</div>
-		<div id="portfolio-extend"></div>
 	</section>
 
-	<a name="skills-anchor"></a>
 	<section id="skills-section" data-speed="6" data-type="background">
+		<a name="skills-anchor"></a>
 		<div class="container">
 			<img src="public/img/742-wrench-selected-gray@2x.png">
 			<h1>Skills</h1>
@@ -113,7 +93,7 @@
 				<div class="col-md-3">
 					<img src="public/img/display.png">
 					<h3>Front-End Development</h3>
-					<p>I can build beautiful websites utilizing the latest HTML and CSS techniques. I understand cross-browser compatibility issues. I can code in JavaScript and its many libraries to bring web pages to life.</p>
+					<p>I can build beautiful websites utilizing the latest HTML and CSS techniques. I understand cross-browser compatibility issues and I code in JavaScript and its many libraries to bring web pages to life.</p>
 				</div>
 
 				<div class="col-md-3">
@@ -125,13 +105,13 @@
 				<div class="col-md-3">
 					<img src="public/img/stacked-disks.png">
 					<h3>Back-End Development</h3>
-					<p>Highly proficient in Ruby and the frameworks Rails and Sinatra. Experience with Node using Express. Test coverage is a must and I have built out complete test ensuring reliability. I have a strong grasp of databases.</p>
+					<p>Highly proficient in Ruby and the frameworks Rails and Sinatra. Experience with Node using Express. Test coverage is a must and I have built out complete test suites ensuring reliability. I have a strong grasp of databases.</p>
 				</div>
 
 				<div class="col-md-3">
 					<img src="public/img/users.png">
 					<h3>Startup Background</h3>
-					<p>I have worn many different hats to help run and grow a successful startup. I understand the importance of good team dynamics. I am happy to contirubte beyond my scope. I am always eager to learn more.</p>
+					<p>I have worn many different hats to help run and grow a successful startup. I understand the importance of good team dynamics and I am happy to contribute beyond my scope. I am always eager to learn more.</p>
 				</div>
 
 			</div>
@@ -139,25 +119,33 @@
 	</section>
 
 	<section id="about-section" data-speed="6" data-type="background">
-		<a name="about-anchor"></a>
-		<div class="container">
-			<img src="public/img/870-smile-selected@2x-gray.png">
-			<div class="row">
-				<div class="col-md-4">
-				</div>
-				<div class="col-md-4">
-					<h1>About Me</h1>
-					<p>Hello! I'm Logan Bestwick and I'm a web developer. I currently live in San Francisco. In my free time you can find me outdoors hiking, mountain biking, or snowboarding. At night I'll be catching a live show or catching up with friends.</br></br>
-					During vacations or extended breaks you can find me exploring a new city or country. Travel is my biggest passion and I have a lot of places still to see on my bucket list.</br></br>
-					Thanks for stopping by! 
-					</p>
-				</div>
-				<div class="col-md-4">
+		<div id="background-wrapper">
+			<a name="about-anchor"></a>
+			<div class="container">
+				<img src="public/img/870-smile-selected@2x-gray.png">
+				<div class="row">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<h1>About Me</h1>
+						<p>Hello my name is Logan Bestwick and I'm a web developer currently living in San Francisco. In my free time you can find me hiking, mountain biking, snowboarding, or catching a live music show.</br></br>
+						When I get the time, I travel. Exploring new cities and countries is my greatest passion.</br></br>
+						Feel free to connect with me at any of the links below.
+						</p>
+						<ul>
+							<li><a href="mailto:loganbestwick@gmail.com"><img src="public/img/email.png"></a></li>
+							<li><a href="https://www.linkedin.com/in/loganbestwick" target="_blank"><img src="public/img/linkedin.png"></a></li>
+							<li><a href="https://github.com/loganbestwick" target="_blank"><img src="public/img/github.png"></a></li>
+							<li><a href="https://www.facebook.com/logan.bestwick" target="_blank"><img src="public/img/facebook.png"></a></li>
+							<li><a href="https://twitter.com/loganbestwick" target="_blank"><img src="public/img/twitter.png"></a></li>
+						</ul>
+					</div></br>
+					<div>Designed and Developed by Logan Bestwick</div>
+					<div id="signature" class="col-md-3"></div>
 				</div>
 			</div>
 		</div>
 	</section>
-
+<!--  -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="public/js/bootstrap.js"></script>
 	<script src="public/js/lb.js"></script>

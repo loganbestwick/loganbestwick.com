@@ -4,8 +4,8 @@ $(document).ready(function(){
 	$('#wrench-item a').tooltip({placement: 'bottom', trigger: 'hover'});
 	$('#about-item a').tooltip({placement: 'bottom', trigger: 'hover'});
 
-	$('#sidebar-nav').animate({right : '80px'}, 900, function(){
-		$(this).animate({right : '0px'}, 1100)
+	$('#sidebar-nav').animate({right : '40px'}, 400, function(){
+		$(this).animate({right : '0px'}, 400)
 	});
 
 	$window = $(window);
@@ -18,12 +18,12 @@ $(document).ready(function(){
 		});
 	});
 
-	$('a').click(function(){
+	$('#sidebar-nav a').click(function(){
     $('html, body').animate({
         scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
     }, 1000);
     return false;
-});
+	});
 
 	function navScroller() {
 		var homeTop = 0,
