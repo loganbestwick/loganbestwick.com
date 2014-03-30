@@ -11,26 +11,6 @@
 
 	<div id="home-page">
 		<a name="home-anchor"></a>
-<!-- 		<div class="navbar navbar-inverse navbar-static-top">
-			<div class="container">
-
-				<a href="#" class="navbar-brand">logan bestwick</a>
-
-				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-
-				<div class="collapse navbar-collapse navHeaderCollapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li id="chart-item"><a href="#projects-anchor" data-toggle="tooltip" title="portfolio"><img class="chart navbar-img"></a></li>
-						<li id="wrench-item"><a href="#skills-anchor" data-toggle="tooltip" title="skills"><img class="wrench navbar-img"></a></li>
-						<li id="about-item"><a href="#about-anchor" data-toggle="tooltip" title="about"><img class="person navbar-img"></a></li>
-					</ul>
-				</div>
-			</div>
-		</div> -->
 
 		<section id="welcome-section" data-speed="6" data-type="background">
 			<div class="container">
@@ -57,48 +37,53 @@
 			<h1>Portfolio</h1>
 		</div>
 		<div id="carousel-projects" class="carousel slide" data-ride="caruosel">
-
-			<ol class="carousel-indicators">
-				<li data-target="carousel-campcollab" data-slide-to="0" class="active"></li>
-				<li data-target="carousel-geotools" data-slide-to="1"></li>
-				<li data-target="carousel-slj" data-slide-to="2"></li>
-			</ol>
-
 			<div class="carousel-inner">
-
 				<div class="item active clearfix">
-					<div class="carousel-img">
-						<a href="http://campcollab.herokuapp.com" target="_blank"><img src="public/img/campcollab.png" alt="first-slide"></a>
-					</div>
-					<div class="carousel-description">
-						<h1>Camp Collab</h1>
-						<p>An online web app which allows you to create virtual campsites to help you and your friends coordinate upcoming camping trips.</p>
-						<img id="rails-logo" src="public/img/rails-logo.png">
-					</div>
-				</div>
-
-				<div class="clearfix item">
-					<div class="carousel-img">
-						<a href="https://github.com/loganbestwick/geo-tools" target="_blank"><img src="public/img/geo-tools.png" alt="second-slide"></a>
-					</div>
-					<div class="carousel-description">
-						<h1>geo-tools</h1>
-						<p>A simple, easy to use, open-source npm library used to geocode an address, reverse geocode coordinates, and calculate the distance between two locations.</p>
-						<img id="node-logo" src="public/img/node-logo.png">
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-5 carousel-img">
+							<a href="http://campcollab.herokuapp.com" target="_blank"><img src="public/img/campcollab.png" alt="first-slide"></a>
+						</div>
+						<div class="col-md-5 carousel-description">
+							<h1>Camp Collab</h1>
+							<p>An online web app which allows you to create virtual campsites to help you and your friends coordinate upcoming camping trips.</p>
+							<img id="rails-logo" src="public/img/rails-logo.png">
+						</div>
+						<div class="col-md-1"></div>
 					</div>
 				</div>
 
 				<div class="clearfix item">
-					<div class="carousel-img">
-						<a href="http://sljracer.herokuapp.com" target="_blank"><img src="public/img/slj-racer.png" alt="second-slide"></a>
-					</div>
-					<div class="carousel-description">
-						<h1>SLJ Typeracer</h1>
-						<p>The baddest type racer out there. Mr. Samuel L. Jackson 'encourages' you during your type racing journey. WPM and accuracy are kept track of. This project is mostly all done in Javascript and incorporates Firebase to keep a leaderboard.</p>
-						<img id="js-logo" src="public/img/jslogo.png">
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-5 carousel-img">
+							<a href="https://github.com/loganbestwick/geo-tools" target="_blank">
+							<img src="public/img/geo-tools.png" alt="second-slide"></a>
+						</div>
+						<div class="col-md-5 carousel-description">
+							<h1>geo-tools</h1>
+							<p>A simple, easy to use, open-source npm library used to geocode an address, reverse geocode coordinates, and calculate the distance between two locations.</p>
+							<img id="node-logo" src="public/img/node-logo.png">	
+						</div>
+						<div class="col-md-1"></div>
 					</div>
 				</div>
 
+				<div class="clearfix item">
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-5 carousel-img">
+							<a href="http://sljracer.herokuapp.com" target="_blank">
+							<img src="public/img/slj-racer.png" alt="second-slide"></a>
+						</div>
+						<div class="col-md-5 carousel-img">
+							<h1>SLJ Typeracer</h1>
+							<p>The baddest type racer out there. Mr. Samuel L. Jackson 'encourages' you during your type racing journey. WPM and accuracy are kept track of. This project is mostly all done in Javascript and incorporates Firebase to keep a leaderboard.</p>
+							<img id="js-logo" src="public/img/jslogo.png">
+						</div>
+						<div class="col-md-1"></div>
+					</div>
+				</div>			
 			</div>
 
 			<a class="left carousel-control" href="#carousel-projects" data-slide="prev">
@@ -108,7 +93,14 @@
   		<span class="glyphicon glyphicon-chevron-right"></span>
 			</a>
 
+			<ol class="carousel-indicators">
+				<li data-target="carousel-campcollab" data-slide-to="0" class="active"></li>
+				<li data-target="carousel-geotools" data-slide-to="1"></li>
+				<li data-target="carousel-slj" data-slide-to="2"></li>
+			</ol>
+
 		</div>
+		<div id="portfolio-extend"></div>
 	</section>
 
 	<a name="skills-anchor"></a>
@@ -161,15 +153,6 @@
 					</p>
 				</div>
 				<div class="col-md-4">
-					<!-- <h1>Contact Me</h1>
-					<p>Feel free to contact me at any of the links below:</p>
-					<ul>
-						<li>Email Me</li>
-						<li>Connect With Me</li>
-						<li>Check Me Out on Github</li>
-						<li>Friend Me</li>
-						<li>Tweet At Me</li>
-					</ul> -->
 				</div>
 			</div>
 		</div>

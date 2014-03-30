@@ -48,9 +48,8 @@ $(document).ready(function(){
 		var homeTop = 0,
 				portfolioTop = $('#projects-section').offset().top,
 				skillsTop = $('#skills-section').offset().top,
-				aboutTop = $('#about-section').offset().top + 26;
+				aboutTop = $('#about-section').offset().top;
 				$window = $(window);
-				console.log(portfolioTop, skillsTop, aboutTop, $('body').height());
 		$window.scroll(function(){
 			if (($window.scrollTop() >= portfolioTop) && ($window.scrollTop() < skillsTop)) {
 				navUpdate('1');
