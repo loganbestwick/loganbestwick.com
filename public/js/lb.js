@@ -4,9 +4,12 @@ $(document).ready(function(){
 	$('#wrench-item a').tooltip({placement: 'bottom', trigger: 'hover'});
 	$('#about-item a').tooltip({placement: 'bottom', trigger: 'hover'});
 
-	$('#sidebar-nav').animate({right : '40px'}, 400, function(){
-		$(this).animate({right : '0px'}, 400)
-	});
+	if (/webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.
+		test(navigator.userAgent) === false) {
+		$('#sidebar-nav').animate({right : '40px'}, 400, function(){
+			$(this).animate({right : '0px'}, 400)
+		});
+	}
 
 	$window = $(window);
 	$('section[data-type="background"]').each(function(){

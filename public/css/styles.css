@@ -27,6 +27,7 @@ p, div {
 @media (max-width: 400px) {
 	#home-page {
 		background: url("../img/mobile/sf-mobile.jpg") fixed;
+		background-attachment: scroll;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -59,6 +60,7 @@ p, div {
 
 #sidebar-nav li {
 	list-style-type: none;
+	height: 15px;
 }
 
 #sidebar-nav li img {
@@ -69,6 +71,20 @@ p, div {
 
 #home-page .container {
 	padding-top: 100px;
+}
+
+@media (max-width: 400px) {
+	#sidebar-nav {
+		margin-right: 15px;
+		top: 29%;
+		right: 0px;
+	}
+
+	#sidebar-nav li img {
+		height: 10px;
+		width: 10px;
+		position: fixed;
+	}
 }
 
 /****Projects Section****/
@@ -120,11 +136,6 @@ p, div {
 	padding: 25px 0 10px 0;
 }
 
-.carousel-control {
-	position: absolute;
-	width: 50px;
-}
-
 .carousel-control.left, .carousel-control.right {
 	background-image: none;
 	width: 4%;
@@ -160,11 +171,15 @@ p, div {
 	}
 
 	.carousel-control.left {
-		margin-left: 27px;
+		margin-left: 35px;
 	}
 
 	.carousel-control.right {
-		margin-right: 30px;
+		margin-right: 36px;
+	}
+
+	.carousel-control.left, .carousel-control.right {
+		width: 0%;
 	}
 
 }
@@ -211,7 +226,7 @@ p, div {
 	background-color: rgba(0, 0, 0, 0.08);
 }
 
-@media screen and (max-width: 810px) {
+@media (max-width: 810px) {
 	#skills-section .row {
 		width: 85%;
 		margin: 0 auto;
@@ -280,6 +295,7 @@ p, div {
 @media (max-width: 430px) {
 	#background-wrapper {
 		background: url("../img/mobile/about-mobile.jpg") fixed;
+		background-attachment: scroll;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
